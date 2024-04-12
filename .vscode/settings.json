@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/65226f5d-a723-4388-af80-e40f08dc97a0/resourceGroups/app123ppp_group-b1b7/providers/Microsoft.Web/sites/app123ppp",
+    "appService.deploySubpath": "."
 }

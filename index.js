@@ -6,9 +6,9 @@ dotenv.config();
 const app = express();
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "public")));
+  app.use(express.static(path.join(__dirname, "public", "build")));
   app.get("/", (req, res) => {
-    res.sendFile("index.html");
+    res.sendFile(path.resolve(__dirname, "public", "build", "index.html"));
   });
 }
 
